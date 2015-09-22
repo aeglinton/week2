@@ -1,8 +1,18 @@
 /* Sets map-container size and centers it */
-body, html, #map-container {height: 400px; width: 500px; margin: 0 auto;}
+body, html, #map-container {
+	height: 400px; 
+	width: 500px; 
+	margin: 0 auto;}
+	
 /* Sets size and color for red box, centers it */
-.box {height: 200px; width: 200px; margin: 0 auto;}
-.red {background-color: tomato; border: 3px double red;}
+.box {
+	height: 200px; 
+	width: 200px; 
+	margin: 0 auto;}
+	
+.red {
+	background-color: tomato; 
+	border: 3px double red;}
 
 #heading {
 	color:darkgrey;

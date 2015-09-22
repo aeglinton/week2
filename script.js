@@ -13,19 +13,23 @@ $('.geojson').click(function() {
 	geojson.addTo(map);
 });}); */
 
-// Trying geojson again, still not working
-$.getJSON("https://dl.dropboxusercontent.com/u/8550761/wilson-library.geojson", function(data){
-	new L.GeoJSON(data).addTo(map);
+// Trying geojson again
+$.getJSON('https://dl.dropboxusercontent.com/u/8550761/wilson-library.geojson',function(data){
+var geojson = new L.geoJson(data).addTo(map);
 });
 	
 /* // Should alert when red box is clicked, stuck on this too
 $(".red.box").click(function(e){
-	alert("You clicked my red box.");
+	alert("You clicked the red box.");
 }); */
 
 /* Copied this from someone and it didn't work
 var boxclick = function() {
-	alert("You clicked my red box!");
+	alert("You clicked the red box!");
 	
 $(".red.box").click(boxclick);
 }; */
+
+$(".red.box").click(function(e){
+	alert("Finally!");
+});
